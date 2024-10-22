@@ -1,13 +1,8 @@
 package org.haxe.extension;
 
 
-import android.app.Activity;
-import android.content.res.AssetManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.View;
 
 
 /* 
@@ -36,15 +31,7 @@ import android.view.View;
 	function for performing a single task, like returning a value
 	back to Haxe from Java.
 */
-public class Admob_sdk extends Extension {
-	
-	
-	public static int sampleMethod (int inputValue) {
-		
-		return inputValue * 100;
-		
-	}
-	
+public class AdmobSdk extends Extension {
 	
 	/**
 	 * Called when an activity you launched exits, giving you the requestCode 

@@ -2,6 +2,7 @@ buildscript {
 	repositories {
 		jcenter()
 		google()
+		mavenCentral()
 	}
 	
 	dependencies {
@@ -18,4 +19,6 @@ android {
 
 dependencies {
 	api project(':deps:extension-api')
+	api project(':deps:sxk-game-sdk')
+	implementation("com.google.android.gms:play-services-ads:23.3.0")
 }
