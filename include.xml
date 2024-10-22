@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
 	
-	<ndll name="admob_sdk" unless="android" />
-	
 	<!-- Use the following for an Android Java extension, not needed otherwise -->
 	
 	<dependency name="admob_sdk" path="dependencies/android" if="android" />
-	<android extension="org.haxe.extension.Admob_sdk" />
-	
+	<android extension="org.haxe.extension.AdmobSdk" />
+	<define name="SDK_VIDEO_org.haxe.extension.AdmobVideoAd"/>
+
 </project>
