@@ -50,7 +50,7 @@ public class AdmobVideoAd implements IVideo {
 
     public void onLoad(SDKListener listener) {
         AdRequest adRequest = new AdRequest.Builder().build();
-        RewardedAd.load(ZSDK.getInstance().activity, "ca-app-pub-3940256099942544/5224354917",
+        RewardedAd.load(ZSDK.getInstance().activity, ZSDK.getInstance().getMetaDataKey("ADMOB_VIDEO_ID"),
                 adRequest, new RewardedAdLoadCallback() {
                     @Override
                     public void onAdFailedToLoad(LoadAdError loadAdError) {

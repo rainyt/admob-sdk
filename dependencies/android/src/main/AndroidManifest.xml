@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.haxe.extension.admob_sdk" >
-	
-	<application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.haxe.extension.admob_sdk">
+
+    <application>
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="::SET_ADMOD_ID::"/>
+            android:value="::SET_ADMOB_APPLICATION_ID::" />
+        <meta-data
+            android:name="ADMOB_VIDEO_ID"
+            android:value="::SET_ADMOB_VIDEO_ID::" />
     </application>
-	
+
 </manifest>
