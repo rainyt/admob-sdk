@@ -1,2 +1,4 @@
 --library sxk-game-sdk
 --no-output
+--cpp bin/cpp
+--library hx-ios-uikit

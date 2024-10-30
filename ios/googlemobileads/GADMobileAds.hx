@@ -16,7 +16,7 @@ extern class GADMobileAds{
 	overload public static function autorelease():GADMobileAds;
 
 	@:native("sharedInstance")
-	overload public static function sharedInstance():Dynamic;
+	overload public static function sharedInstance():GADMobileAds;
 
 	@:native("versionNumber")
 	public var versionNumber:Dynamic;
