@@ -1,5 +1,6 @@
 package platform.ios;
 
+import haxe.macro.Compiler;
 import Objc.NIL;
 import cpp.objc.NSError;
 import cpp.objc.NSString;
@@ -16,7 +17,8 @@ class AdmobVideoAd extends VideoAd {
 		super.show(future);
 		// 开始加载广告
 		var request = GADRequest.request();
-		var testId:NSString = "ca-app-pub-3940256099942544/1712485313";
+		var admob_video_id = Compiler.getDefine("admob_video_id");
+		var testId:NSString = admob_video_id ?? "ca-app-pub-3940256099942544/1712485313";
 		GADRewardedAd.loadWithAdUnitIDRequestCompletionHandler(testId, request, untyped __cpp__('^(GADRewardedAd *ad, NSError *error) {
             {0}(ad, error);
             }', onGADRewardAdLoadCompletion));

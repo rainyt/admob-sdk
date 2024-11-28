@@ -9,3 +9,10 @@ Google Admob SDK, 仅支持了视频广告。该库需要与`sxk-game-sdk`一起
 <!-- 这是测试广告单元ID，正式发布时，请更换为自已的广告ID -->
 <set name="admob_video_id" value="ca-app-pub-3940256099942544/5224354917"/>
 ```
+
+# IOS 配置
+如果是IOS端，需要在info.plist中配置如下配置：
+```xml
+<key>GADApplicationIdentifier</key>
+<string>${admob_application_id}</string>
+```
