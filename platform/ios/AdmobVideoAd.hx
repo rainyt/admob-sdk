@@ -1,5 +1,6 @@
 package platform.ios;
 
+import Objc.NIL;
 import cpp.objc.NSError;
 import cpp.objc.NSString;
 import ios.googlemobileads.GADRewardedAd;
@@ -25,5 +26,17 @@ class AdmobVideoAd extends VideoAd {
 		if (error != null)
 			trace("onGADRewardAdLoadCompletion error.");
 		trace("onGADRewardAdLoadCompletion");
+		ad.presentFromRootViewControllerUserDidEarnRewardHandler(null, untyped __cpp__('^(){
+		{0}(ad);
+		}', onGADReward));
+	}
+
+	/**
+	 * 发放奖励
+	 * @param ad 
+	 */
+	private function onGADReward(ad:GADRewardedAd):Void {
+		trace("onGADReward");
+		this.onReward(true);
 	}
 }
