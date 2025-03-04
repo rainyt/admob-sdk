@@ -122,7 +122,7 @@ public class AdmobVideoAd implements IVideo {
 
                 @Override
                 public void onError(int code, String error) {
-
+                    listener.onError(code,error);
                 }
             });
         }
